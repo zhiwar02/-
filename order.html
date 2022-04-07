@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/order.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <script src="./JavaScript/script.js" defer></script>
+  </head>
+  <body>
+    <!--Nav Section-->
+    <header>
+      <a href="#" class="logo"
+        ><img src="./images/logo.jpg" alt="Kurdish_Restaurant_Logo"
+      /></a>
+      <nav class="navbar">
+        <a href="./index.html">سەرەتا</a>
+        <a href="menu.html">مینوو</a>
+        <a class="active" href="order.html"> داواکاری</a>
+        <a href="delivery.html">گەیاندن</a>
+        <a href="about.html">دەربارە</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <form action="" id="search-form">
+          <input
+            type="search"
+            placeholder="لێرە بگەڕێ...."
+            name=""
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+          <i class="fas fa-times" id="close"></i>
+        </form>
+      </div>
+    </header>
+    <!--End of Nav Section-->
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+      <h3 class="sub-heading">ئێستا داوا بکە</h3>
+      <h1 class="heading">خێرا و خاوێن</h1>
+
+      <form action="order.php" method="post">
+        <div class="inputBox">
+          <div class="input">
+            <span>ناو:</span>
+            <input type="text" required placeholder="ناوت بنوسە" name="name" />
+          </div>
+          <div class="input">
+            <span>ژمارەی مێز</span>
+            <input
+              type="number"
+              required
+              placeholder="ژمارەی مێزەکەت بنوسە"
+              name="number"
+            />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>خواردنی داواکراو</span>
+            <input
+              type="text"
+              required
+              placeholder="ناوی خواردنەکە بنوسە"
+              name="food"
+            />
+          </div>
+          <div class="input">
+            <span> خواردنەوە</span>
+            <input
+              type="test"
+              placeholder="ناوی خواردنەوەی داواکراو بنوسە"
+              name="extra-food"
+            />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>جەند دانەت دەوێت</span>
+            <input
+              type="number"
+              required
+              placeholder="ژمارەی خواردنی داواکراو "
+              name="quantity"
+            />
+          </div>
+          <div class="input">
+            <span>جۆری مێز</span>
+            <select name="table-type" id="food-table" required>
+              <option value="" class="defualt">جۆری مێزەکە دیاری بکە</option>
+              <option value="">مێزی بچووک(٢ کەسی)</option>
+              <option value="">مێزی بچووک(٣ کەسی)</option>
+              <option value="">مێزی مامناوەند (٤ کەسی)</option>
+              <option value="">مێزی مامناوەند (٥ کەسی)</option>
+              <option value="">مێزی گەورە (+٦)</option>
+            </select>
+          </div>
+          <div class="input">
+            <span>شوێنی دانیشتن</span>
+            <select name="place" id="food-table" required>
+              <option value="" class="defualt">شوێنەکەت</option>
+              <option value="">ناوەوە</option>
+              <option value="">دەرەوە</option>
+              <option value="">سەربان</option>
+            </select>
+          </div>
+          <div class="input">
+            <span>کات و بەروار</span>
+            <input name="date" type="datetime-local" required />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>تێبینی:</span>
+            <textarea
+              name=""
+              placeholder="هەر تێبینیەکت هەیە لێرە بینوسە...."
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+        <input type="submit" value="داوا بکە" class="btn btn--secondery" />
+      </form>
+    </section>
+    <!--Footer Section-->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>لقەکانمان</h3>
+          <a href="#">هەڵەبجە</a>
+          <a href="#">سلێمانی</a>
+          <a href="#">ڕانیە</a>
+          <a href="#">دەربەندیخان</a>
+          <a href="#">چەمچەماڵ</a>
+        </div>
+
+        <div class="box">
+          <h3>پەیجەکان</h3>
+          <a href="index.html">سەرەتا</a>
+          <a href="menu.html">مینوو</a>
+          <a href="order.html"> داواکاری</a>
+          <a href="delivery.html">گەیاندن</a>
+          <a href="about.html">دەربارە</a>
+        </div>
+
+        <div class="box">
+          <h3>پەیوەندی</h3>
+          <a href="tel:07708817375">07708817375</a>
+
+          <a href="mailto:zhiwar04@gmail.com"> zhiwar04@gmail.com</a>
+
+          <a href="#">کوردستان ، سلێمانی</a>
+        </div>
+
+        <div class="follow-box">
+          <h3>فۆڵۆمان بکەن</h3>
+          <a href="https://www.facebook.com/profile.php?id=100074414323637"
+            ><i class="fa-brands fa-facebook"></i>فەیسبووک</a
+          >
+          <a href="https://twitter.com/ZHIWAR10"
+            ><i class="fa-brands fa-twitter"></i>توییتەر</a
+          >
+
+          <a href="https://www.instagram.com/zhiwar03/"
+            ><i class="fa-brands fa-instagram"></i>ئینستاگرام</a
+          >
+          <a
+            href="https://www.snapchat.com/add/zhi_war115?share_id=j-ZpEPdrcxc&locale=en-US"
+            ><i class="fa-brands fa-snapchat"></i>سناپ چات</a
+          >
+        </div>
+      </div>
+      <div class="credit">
+        مافی بڵاوکردنەوەی پارێزراوە بۆ ماڵپەڕی <span>یەم یەمی</span>
+      </div>
+    </section>
+    <!-- footer section ends -->
+  </body>
+</html>
